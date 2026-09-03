@@ -1,0 +1,49 @@
+# --- Web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Settings & validation ---
+pydantic==2.9.2
+pydantic-settings==2.5.2
+email-validator==2.2.0
+
+# --- Database (MongoDB, async) ---
+motor==3.6.0
+pymongo==4.9.1
+
+# --- Background task queue ---
+celery==5.4.0
+redis==5.0.8
+
+# --- Auth / security ---
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9
+
+# --- Payments (Razorpay) ---
+razorpay==1.4.2
+
+# --- AI (Claude API) ---
+anthropic==0.34.2
+
+# --- Analytics / ML ---
+pandas==2.2.3
+scikit-learn==1.5.2
+joblib==1.4.2
+numpy==2.1.1
+
+# --- HTTP client (used internally, e.g. notification providers, health checks) ---
+httpx==0.27.2
+
+# --- Logging / observability ---
+python-json-logger==2.0.7
+sentry-sdk[fastapi]==2.14.0
+
+# --- Environment loading (local dev) ---
+python-dotenv==1.0.1
+
+# --- Testing ---
+pytest==8.3.3
+pytest-asyncio==0.24.0
+pytest-mock==3.14.0
+mongomock-motor==0.0.34
